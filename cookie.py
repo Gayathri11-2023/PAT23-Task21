@@ -35,9 +35,11 @@ class loginPage:
 url = "https://www.saucedemo.com/"
 obj = loginPage(url)
 obj.boot()
+# Get the cookies Before login 
 print(obj.getCookies())
 print(obj.getCurrent_URL())
 obj.login()
+# Get the cookies after login
 print(obj.getCookies())
 obj.quit()
 
